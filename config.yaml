@@ -1,0 +1,28 @@
+seed: 42
+batch_size: 32
+learning_rate: 1e-3
+epochs: 100
+early_stopping:
+  use: true
+  patience: 10
+device: "cuda"
+
+data:
+  root: "C:/Users/USER/Desktop/processed_seg2"
+  train_ratio: 0.6
+  val_ratio: 0.2
+  test_ratio: 0.2
+  feature_type: "minirocket"
+  feature_cache_dir: "./features"
+
+model:
+  d_model: 64
+  n_heads: 4
+  d_ff: 128
+  num_layers: 2
+  dropout: 0.3
+
+wandb:
+  project: "bp_estimation"
+  entity: null
+  use: true
