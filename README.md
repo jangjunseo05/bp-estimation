@@ -15,3 +15,5 @@ Developed an end-to-end pipeline to estimate Systolic (SBP) and Diastolic (DBP) 
 
 ## 📊 Performance Visualization
 - **Prediction Error Distribution:** Concentrated near zero, confirming high reliability for medical AI applications.
+  
+<img width="453" height="350" alt="스크린샷 2026-01-06 055828" src="https://github.com/user-attachments/assets/9d6051b7-b709-4793-918e-36a600abbeb0" />
