@@ -1,5 +1,8 @@
 # Non-invasive Blood Pressure Estimation via Multi-modal Signal Synchronization
 
+Further details regarding this project are available in the attached Presentation file!
+&nbsp;<br>
+
 ## 📌 Project Overview
 Developed an end-to-end pipeline to estimate Systolic (SBP) and Diastolic (DBP) blood pressure using **Time Series Transformer (TST)** on the vitalDB dataset.
 
