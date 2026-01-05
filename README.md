@@ -1,0 +1,17 @@
+# Non-invasive Blood Pressure Estimation via Multi-modal Signal Synchronization
+
+## 📌 Project Overview
+Developed an end-to-end pipeline to estimate Systolic (SBP) and Diastolic (DBP) blood pressure using **Time Series Transformer (TST)** on the vitalDB dataset.
+
+
+
+## 🛠️ Key Research Points & Decisions
+* **Decision 1: Beat-level Feature Engineering**
+  - Synchronized PPG and ECG signals using the **Pan-Tompkins algorithm** to extract **Pulse Arrival Time (PAT)** sequences.
+* **Decision 2: Hybrid Architecture (TST + MiniRocket)**
+  - Integrated **MiniRocket** as a feature extractor to capture local temporal patterns, which reduced **MAE from 13.67 to 5.51** compared to the baseline TST model.
+* **Decision 3: Robustness against Outliers**
+  - Adopted **Huber Loss** to mitigate the impact of sensor noise and physiological outliers, achieving a final MAE of **4.87 (SBP) / 4.25 (DBP)**.
+
+## 📊 Performance Visualization
+- **Prediction Error Distribution:** Concentrated near zero, confirming high reliability for medical AI applications.
